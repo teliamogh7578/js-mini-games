@@ -102,3 +102,7 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+.check:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

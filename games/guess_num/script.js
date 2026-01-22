@@ -19,6 +19,7 @@ document.querySelector(".check").addEventListener("click", function () {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
     }
+    document.querySelector(".check").disabled = true;
   } else {
     if (score > 1) {
       document.querySelector(".message").textContent =
@@ -28,6 +29,7 @@ document.querySelector(".check").addEventListener("click", function () {
     } else {
       document.querySelector(".message").textContent = "💥You lost the game";
       document.querySelector(".score").textContent = 0;
+      document.querySelector(".check").disabled = true;
     }
   }
 });
@@ -40,4 +42,5 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   document.querySelector(".number").style.width = "15rem";
   document.querySelector(".guess").value = "";
+  document.querySelector(".check").disabled = false;
 });
