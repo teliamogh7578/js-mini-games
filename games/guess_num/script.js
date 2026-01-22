@@ -1,6 +1,5 @@
 "use strict";
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
-console.log(secretNumber);
 let score = 20;
 let highscore = 0;
 
@@ -15,31 +14,23 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".number").textContent = secretNumber;
     document.querySelector("body").style.backgroundColor = "#60b347";
     document.querySelector(".number").style.width = "30rem";
+
     if (score > highscore) {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
     }
-  } else if (secretNumber > guess) {
+  } else {
     if (score > 1) {
-      document.querySelector(".message").textContent = "📉Too low!";
+      document.querySelector(".message").textContent =
+        guess < secretNumber ? "📉Too low!" : "📈Too high!";
       score--;
       document.querySelector(".score").textContent = score;
-    } else {
-      document.querySelector(".message").textContent = "💥You lost the game";
-      document.querySelector(".score").textContent = 0;
-    }
-  } else if (secretNumber < guess) {
-    if (score > 1) {
-      score--;
-      document.querySelector(".score").textContent = score;
-      document.querySelector(".message").textContent = "📈Too high!";
     } else {
       document.querySelector(".message").textContent = "💥You lost the game";
       document.querySelector(".score").textContent = 0;
     }
   }
 });
-
 document.querySelector(".again").addEventListener("click", function () {
   score = 20;
   document.querySelector(".score").textContent = score;
