@@ -28,6 +28,20 @@ Each game will be organized in its own folder with separate HTML, CSS, and JavaS
 - CSS
 - JavaScript (Vanilla)
 
+## Games Completed
+
+### 1. Guess the Number
+
+Status: ✅ Completed
+
+Concepts used:
+
+- Variables and conditionals
+- DOM manipulation
+- Event handling
+- Game state management (win/lose)
+- High score tracking
+
 ## Status
 
 🚧 In progress: new games will be added regularly as part of continuous learning.
