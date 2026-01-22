@@ -14,12 +14,22 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (secretNumber === guess) {
     document.querySelector(".message").textContent = "🥳Correct number!";
   } else if (secretNumber > guess) {
-    document.querySelector(".message").textContent = "📉Too low!";
-    score--;
-    document.querySelector(".score").textContent = score;
+    if (score > 1) {
+      document.querySelector(".message").textContent = "📉Too low!";
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent = "💥You lost the game";
+      document.querySelector(".score").textContent = 0;
+    }
   } else if (secretNumber < guess) {
-    score--;
-    document.querySelector(".score").textContent = score;
-    document.querySelector(".message").textContent = "📈Too high!";
+    if (score > 1) {
+      score--;
+      document.querySelector(".score").textContent = score;
+      document.querySelector(".message").textContent = "📈Too high!";
+    } else {
+      document.querySelector(".message").textContent = "💥You lost the game";
+      document.querySelector(".score").textContent = 0;
+    }
   }
 });
