@@ -44,3 +44,15 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".guess").value = "";
   document.querySelector(".check").disabled = false;
 });
+// Modal functionality
+const closeModal = function () {
+  document.querySelector(".modal").classList.add("hidden");
+  document.querySelector(".overlay").classList.add("hidden");
+};
+const openModal = function () {
+  document.querySelector(".modal").classList.remove("hidden");
+  document.querySelector(".overlay").classList.remove("hidden");
+};
+document.querySelector(".howtoplay").addEventListener("click", openModal);
+document.querySelector(".close-modal").addEventListener("click", closeModal);
+document.querySelector(".overlay").addEventListener("click", closeModal);
