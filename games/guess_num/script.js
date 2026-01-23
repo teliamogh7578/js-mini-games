@@ -62,5 +62,7 @@ document.addEventListener("keydown", function (e) {
     !document.querySelector(".modal").classList.contains("hidden")
   ) {
     closeModal();
+  } else if (e.key === "Enter" && !document.querySelector(".check").disabled) {
+    document.querySelector(".check").click();
   }
 });
