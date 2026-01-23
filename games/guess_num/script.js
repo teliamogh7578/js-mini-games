@@ -56,3 +56,11 @@ const openModal = function () {
 document.querySelector(".howtoplay").addEventListener("click", openModal);
 document.querySelector(".close-modal").addEventListener("click", closeModal);
 document.querySelector(".overlay").addEventListener("click", closeModal);
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "Escape" &&
+    !document.querySelector(".modal").classList.contains("hidden")
+  ) {
+    closeModal();
+  }
+});
