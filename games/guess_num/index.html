@@ -12,13 +12,33 @@
       <h1>Guess My Number!</h1>
       <p class="between">(Between 1 and 20)</p>
       <button class="btn again">Again!</button>
-      <button class="btn howtoplay">How to play?</button>
       <div class="number">?</div>
     </header>
     <main>
       <section class="left">
         <input type="number" class="guess" />
         <button class="btn check">Check!</button>
+      </section>
+      <section class="modal-window">
+        <button class="btn howtoplay">How to play?</button>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h1>How to play?</h1>
+          <ul>
+            <li>A secret number between 1 and 20 is chosen.</li>
+            <li>Enter your guess and click Check.</li>
+            <li>
+              You’ll get a hint: Too high 📈 or Too low 📉 Each wrong guess
+              reduces your score by 1.
+            </li>
+            <li>
+              The game ends when: You guess the correct number 🎉, or your score
+              reaches 0 💥
+            </li>
+            <li>Try to win with the highest score possible!</li>
+          </ul>
+        </div>
+        <div class="overlay hidden"></div>
       </section>
       <section class="right">
         <p class="message">Start guessing...</p>
