@@ -38,7 +38,7 @@ main {
   width: 52rem;
   font-size: 2rem;
 }
-h1 {
+.hero-heading {
   font-size: 4rem;
   text-align: center;
   position: absolute;
@@ -110,4 +110,55 @@ h1 {
 .check:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+/* modal window  */
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #e5e7eb;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.howtoplay_heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #f3f9ff;
+}
+.how_list {
+  font-size: 1.8rem;
+  list-style: inside;
+  color: #e5e7eb;
+}
+.how-list-item {
+  margin-bottom: 3rem;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: #292929;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }

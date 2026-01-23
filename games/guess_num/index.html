@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Guess My Number!</h1>
+      <h1 class="hero-heading">Guess My Number!</h1>
       <p class="between">(Between 1 and 20)</p>
       <button class="btn again">Again!</button>
       <div class="number">?</div>
@@ -19,26 +19,32 @@
         <input type="number" class="guess" />
         <button class="btn check">Check!</button>
       </section>
-      <section class="modal-window">
-        <button class="btn howtoplay">How to play?</button>
-        <div class="modal hidden">
+      <button class="btn howtoplay">How to play?</button>
+      <section class="modal-window hidden">
+        <h1 class="howtoplay_heading">How to play?</h1>
+        <div class="modal">
           <button class="close-modal">&times;</button>
-          <h1>How to play?</h1>
-          <ul>
-            <li>A secret number between 1 and 20 is chosen.</li>
-            <li>Enter your guess and click Check.</li>
-            <li>
-              You’ll get a hint: Too high 📈 or Too low 📉 Each wrong guess
+          <br />
+          <ul class="how_list">
+            <li class="how-list-item">
+              A secret number between 1 and 20 is chosen.
+            </li>
+            <li class="how-list-item">Enter your guess and click Check.</li>
+            <li class="how-list-item">
+              You’ll get a hint: Too high 📈 or Too low 📉, Each wrong guess
               reduces your score by 1.
             </li>
-            <li>
+            <li class="how-list-item">
               The game ends when: You guess the correct number 🎉, or your score
-              reaches 0 💥
+              reaches 0 💥.
             </li>
-            <li>Try to win with the highest score possible!</li>
+            <li class="how-list-item">
+              Try to win with the highest score possible!
+            </li>
+            <li class="how-list-item">Click "Again!" to start a new game.</li>
           </ul>
         </div>
-        <div class="overlay hidden"></div>
+        <div class="overlay"></div>
       </section>
       <section class="right">
         <p class="message">Start guessing...</p>
