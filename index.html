@@ -1,27 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Mini Games</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>JS Mini Games</h1>
-      <p class="subtitle">
-        Learning JavaScript by building small interactive games.
-      </p>
+    <main class="container">
+      <header>
+        <h1>JS Mini Games</h1>
+        <p class="subtitle">
+          Learning JavaScript by building small, interactive games.
+        </p>
+      </header>
 
-      <div class="game-list">
-        <a class="game-card" href="games/guess_num/index.html">
-          Guess the Number
+      <section class="games">
+        <a href="games/guess_num/index.html" class="game-card">
+          <div class="game-info">
+            <h2>Guess the Number</h2>
+            <p>Logic • DOM • Events</p>
+          </div>
+          <span class="arrow">→</span>
         </a>
-      </div>
-    </div>
+      </section>
+
+      <footer>
+        <p>More games coming soon...</p>
+      </footer>
+    </main>
   </body>
 </html>
