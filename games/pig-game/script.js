@@ -49,6 +49,9 @@ btnHold.addEventListener("click", function () {
     score[activePlayer];
   if (score[activePlayer] >= 10) {
     playing = false;
+    btnRoll.disabled = true;
+    btnHold.disabled = true;
+
     diceEl.classList.add("hidden");
     document
       .querySelector(`.player--${activePlayer}`)
@@ -74,5 +77,7 @@ btnNew.addEventListener("click", function () {
   currentScore = 0;
   score[0] = 0;
   score[1] = 0;
+  btnRoll.disabled = false;
+  btnHold.disabled = false;
   playing = true;
 });
