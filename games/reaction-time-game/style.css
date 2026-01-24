@@ -35,7 +35,7 @@ h1 {
 .reaction-box {
   position: relative;
   background-color: #3b82f6;
-  height: 260px;
+  height: 280px;
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ h1 {
   top: 10rem;
   left: 21.5rem;
   font-size: 1.2rem;
-  color: #e2e2e2;
+  color: #f8f8f8;
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
