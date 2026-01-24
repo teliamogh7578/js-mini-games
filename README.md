@@ -57,6 +57,20 @@ Concepts used:
 - Event-driven interactions (roll, hold, new game)
 - Game-over handling and button disabling
 
+### 3. Reaction Time Game
+
+Status: ✅ Completed
+
+A reaction-time testing game inspired by minimal interactive experiments, focused on precision and timing.
+
+Concepts used:
+
+- Timers using `setTimeout` and timestamp calculations
+- Game state management (idle, waiting, ready)
+- User interaction handling and feedback
+- Randomized delays and early-click detection
+- High score tracking
+
 ## Status
 
 🚧 In progress: new games will be added regularly as part of continuous learning.
