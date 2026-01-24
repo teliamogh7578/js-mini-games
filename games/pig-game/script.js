@@ -9,6 +9,8 @@ const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 const currentScoreEl = document.querySelector(".current-score");
 
+const score = [0, 0];
+
 let currentScore = 0;
 let activePlayer = 0;
 score0El.textContent = 0;
@@ -28,8 +30,12 @@ btnRoll.addEventListener("click", function () {
   } else {
     document.getElementById(`current--${activePlayer}`).textContent = 0;
     activePlayer = activePlayer === 0 ? 1 : 0;
-    currentScore = 0;
     player0El.classList.toggle("player--active");
     player1El.classList.toggle("player--active");
   }
+});
+btnHold.addEventListener("click", function () {
+  score[activePlayer] += currentScore;
+  document.getElementById(`score--${activePlayer}`).textContent =
+    score[activePlayer];
 });
