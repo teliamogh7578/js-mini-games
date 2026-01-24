@@ -42,6 +42,21 @@ Concepts used:
 - Game state management (win/lose)
 - High score tracking
 
+### 2. Pig Game
+
+Status: ✅ Completed
+
+A two-player dice game built to practice JavaScript game state management and turn-based logic.
+
+Concepts used:
+
+- State management (active player, current score, total score)
+- Turn-based gameplay logic
+- Randomization using dice rolls
+- DOM updates and UI state control
+- Event-driven interactions (roll, hold, new game)
+- Game-over handling and button disabling
+
 ## Status
 
 🚧 In progress: new games will be added regularly as part of continuous learning.
