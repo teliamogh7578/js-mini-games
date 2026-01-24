@@ -5,6 +5,9 @@ const diceEl = document.querySelector(".dice");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
+const currentScoreEl = document.querySelector(".current-score");
+
+let currentScore = 0;
 
 score0El.textContent = 0;
 score1El.textContent = 0;
@@ -15,4 +18,9 @@ btnRoll.addEventListener("click", function () {
   console.log(dice);
   diceEl.classList.remove("hidden");
   diceEl.src = `images/dice-${dice}.png`;
+
+  if (dice !== 1) {
+    currentScore += dice;
+    currentScoreEl.textContent = currentScore;
+  }
 });
