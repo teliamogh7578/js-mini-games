@@ -4,10 +4,12 @@ const reactionBox = document.querySelector(".reaction-box");
 const reactionText = document.querySelector(".reaction-text");
 const highScoreEl = document.querySelector(".highscore span");
 
+highScoreEl.textContent = "N/A";
+
 let startTime;
 let timeoutId;
 let gameState = "idle";
-let highScore = 0;
+let highScore = null;
 
 reactionBox.addEventListener("click", function () {
   if (gameState === "idle") {
