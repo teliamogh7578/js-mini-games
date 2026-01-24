@@ -3,7 +3,7 @@
 const reactionBox = document.querySelector(".reaction-box");
 const reactionText = document.querySelector(".reaction-text");
 const highScoreEl = document.querySelector(".highscore span");
-
+const subReactionText = document.querySelector(".reaction-text-sub");
 highScoreEl.textContent = "N/A";
 
 let startTime;
@@ -16,7 +16,7 @@ reactionBox.addEventListener("click", function () {
     gameState = "waiting";
     reactionText.textContent = "Wait for green...";
     reactionBox.style.backgroundColor = "#c50000";
-
+    subReactionText.classList.add("hidden");
     const delay = Math.random() * 4000 + 1000;
 
     timeoutId = setTimeout(() => {
@@ -33,10 +33,13 @@ reactionBox.addEventListener("click", function () {
     gameState = "idle";
     reactionBox.style.backgroundColor = "#c9c61f";
     reactionText.textContent = "Too soon!";
+    subReactionText.classList.remove("hidden");
+
     return;
   }
 
   if (gameState === "ready") {
+    subReactionText.classList.remove("hidden");
     const reactionTime = Date.now() - startTime;
     reactionText.textContent = `${reactionTime} ms`;
     reactionBox.style.backgroundColor = "#3b82f6";
