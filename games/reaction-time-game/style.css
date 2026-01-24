@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.highscore {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-bottom: 3rem;
+}
+
+.reaction-box {
+  background-color: #3b82f6;
+  height: 260px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.reaction-text {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.how-to-play {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.how-to-play:hover {
+  background-color: #334155;
+}
