@@ -47,7 +47,7 @@ btnHold.addEventListener("click", function () {
   score[activePlayer] += currentScore;
   document.getElementById(`score--${activePlayer}`).textContent =
     score[activePlayer];
-  if (score[activePlayer] >= 10) {
+  if (score[activePlayer] >= 100) {
     playing = false;
     btnRoll.disabled = true;
     btnHold.disabled = true;
