@@ -28,6 +28,26 @@
 
       <img src="images/dice-5.png" alt="Playing dice" class="dice hidden" />
       <button class="btn btn--new">🔄 New game</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>How to Play?</h1>
+
+        <ul>
+          <li>Two players take turns rolling the dice.</li>
+          <li>Each roll adds to the current score.</li>
+          <li>
+            If you roll a <strong>1</strong>, your current score is lost and the
+            turn switches.
+          </li>
+          <li>
+            Click <strong>Hold</strong> to add current score to your total
+            score.
+          </li>
+          <li>The first player to reach the winning score wins.</li>
+        </ul>
+      </div>
+      <div class="overlay hidden"></div>
+
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
